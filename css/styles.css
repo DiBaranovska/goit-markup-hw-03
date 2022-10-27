@@ -12,6 +12,8 @@
   --dark-background-color: #2f303a;
   --white-background-color: #f5f4fa;
   --card-background-color: #eeeeee;
+
+  --indent-card: 30px;
 }
 
 body {
@@ -46,7 +48,39 @@ img {
   cursor: pointer;
 }
 
+.conteiner {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
+.conteiner-indention {
+  margin-bottom: 94px;
+}
+
 /*header-----------------------------------------------------------*/
+header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-coteiner {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-contact-list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
 
 .logo {
   font-family: 'Raleway';
@@ -54,18 +88,24 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: var(--dark-logo-color);
+  margin-right: 93px;
 }
+
 
 .logo-accent {
   color: var(--accent-color);
 }
 
+
 .header-link,
 .header-contact {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--dark-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contact {
@@ -84,38 +124,27 @@ img {
 
 /*body-------------------------------------------------------*/
 
-.conteiner {
-  width: 1230px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid tomato;
-}
-.conteiner-indention {
-  margin-bottom: 94px;
-}
-
 .title {
   background-color: var(--dark-background-color);
-  height: 600px;
   outline: 2px solid tomato;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
 }
 
 
 .main-title {
+  display: inline-block;
   margin-bottom: 30px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
-  outline: 2px solid tomato;
   max-width: 696px;
-  text-align: center;
 }
+
 
 .order-btn {
   display: inline-block;
@@ -139,6 +168,11 @@ img {
 .order-btn:focus {
   background-color: var(--btn-active);
 }
+.features-list {
+  display: flex;
+  gap: var(--indent-card);
+}
+ 
 
 .features {
   font-size: 14px;
@@ -159,8 +193,14 @@ img {
   color: var(--dark-text-color);
   margin-bottom: 50px;
 }
+
+.specialization {
+  display: flex;
+  justify-content: space-between;
+}
 .employee {
-  padding: 94px 215px;
+  padding-top: 94px; 
+ padding-bottom: 215px;
 }
 
 .employee-name {
@@ -183,6 +223,9 @@ img {
 .footer {
   background-color: var(--dark-background-color);
 }
+address {
+  padding-bottom: 60px;
+}
 
 .contact-link {
   margin-bottom: 9px;
@@ -191,9 +234,6 @@ img {
   color: var(--footer-contact-color);
 }
 
-.contact-link:last-child {
-  margin-bottom: 0;
-} 
 .logo-footer{
   padding-top: 60px;
   margin-bottom: 20px;
