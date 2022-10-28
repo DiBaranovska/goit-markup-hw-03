@@ -42,6 +42,8 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .button-cursor {
@@ -49,7 +51,7 @@ img {
 }
 
 .conteiner {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -57,8 +59,9 @@ img {
   outline: 2px solid tomato;
 }
 
-.conteiner-indention {
-  margin-bottom: 94px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*header-----------------------------------------------------------*/
@@ -196,12 +199,10 @@ header {
 
 .specialization {
   display: flex;
-  justify-content: space-between;
+  gap: var(--indent-card);
 }
-.employee {
-  padding-top: 94px; 
- padding-bottom: 215px;
-}
+
+
 
 .employee-name {
   font-weight: 500;
@@ -212,18 +213,42 @@ header {
   margin-bottom: 10px;
 }
 
+.employee-list {
+  display: flex;
+  margin-top: calc(-1 * var(--indent-card));
+  margin-left: calc(-1 * var(--indent-card));
+}
+
+.emloyee-item {
+flex-basis: calc(100% / 3 - var(--indent-card));
+margin-left: var(--indent-card);
+margin-top: var(--indent-card);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.emloyee-content {
+  padding-top: var(--indent-card);
+  padding-bottom: var(--indent-card);
+}
+
+
 .employee-position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
+
+
 /*footer----------------------------------------------------------*/
 
 .footer {
   background-color: var(--dark-background-color);
 }
-address {
+
+.footer-conteiner{
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -235,7 +260,6 @@ address {
 }
 
 .logo-footer{
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 .white-logo,
@@ -244,6 +268,13 @@ address {
 }
 
 /*portfolio--------------------------------------------*/
+
+
+.portfolio-btn-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .portfolio-btn {
   padding: 6px 22px;
