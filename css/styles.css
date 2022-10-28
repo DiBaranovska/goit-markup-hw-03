@@ -66,7 +66,7 @@ img {
 
 /*header-----------------------------------------------------------*/
 header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-coteiner {
@@ -94,11 +94,9 @@ header {
   margin-right: 93px;
 }
 
-
 .logo-accent {
   color: var(--accent-color);
 }
-
 
 .header-link,
 .header-contact {
@@ -135,7 +133,6 @@ header {
   text-align: center;
 }
 
-
 .main-title {
   display: inline-block;
   margin-bottom: 30px;
@@ -147,7 +144,6 @@ header {
   color: var(--white-text-color);
   max-width: 696px;
 }
-
 
 .order-btn {
   display: inline-block;
@@ -175,7 +171,6 @@ header {
   display: flex;
   gap: var(--indent-card);
 }
- 
 
 .features {
   font-size: 14px;
@@ -202,8 +197,6 @@ header {
   gap: var(--indent-card);
 }
 
-
-
 .employee-name {
   font-weight: 500;
   font-size: 16px;
@@ -220,10 +213,11 @@ header {
 }
 
 .emloyee-item {
-flex-basis: calc(100% / 3 - var(--indent-card));
-margin-left: var(--indent-card);
-margin-top: var(--indent-card);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  flex-basis: calc(100% / 3 - var(--indent-card));
+  margin-left: var(--indent-card);
+  margin-top: var(--indent-card);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -232,14 +226,11 @@ margin-top: var(--indent-card);
   padding-bottom: var(--indent-card);
 }
 
-
 .employee-position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-
-
 
 /*footer----------------------------------------------------------*/
 
@@ -247,7 +238,7 @@ margin-top: var(--indent-card);
   background-color: var(--dark-background-color);
 }
 
-.footer-conteiner{
+.footer-conteiner {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -259,7 +250,7 @@ margin-top: var(--indent-card);
   color: var(--footer-contact-color);
 }
 
-.logo-footer{
+.logo-footer {
   margin-bottom: 20px;
 }
 .white-logo,
@@ -269,11 +260,9 @@ margin-top: var(--indent-card);
 
 /*portfolio--------------------------------------------*/
 
-
 .portfolio-btn-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 
 .portfolio-btn {
@@ -290,10 +279,30 @@ margin-top: var(--indent-card);
   color: var(--dark-text-color);
 }
 
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+}
+
+.work-examples-list {
+  display: flex;
+  padding-top: 34px;
+  padding-bottom: 94px;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--indent-card));
+  margin-left: calc(-1 * var(--indent-card));
+}
+
+.work-examples-item {
+  flex-basis: calc((100% - var(--indent-card) * 2) /3);
+  margin-left: var(--indent-card);
+  margin-top: var(--indent-card);
+  outline: 2px solid red;
 }
 
 .work-examples {
@@ -302,6 +311,10 @@ margin-top: var(--indent-card);
   letter-spacing: 0.06em;
   color: var(--dark-text-color);
 }
+
+.work-examples-foto {
+  display: block;
+} 
 
 .work-examples-filter {
   font-size: 16px;
