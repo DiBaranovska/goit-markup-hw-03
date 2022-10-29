@@ -58,7 +58,7 @@ img {
   margin-right: auto;
 }
 
-.section {
+section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -127,7 +127,7 @@ header {
 .title {
   background-color: var(--dark-background-color);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -178,8 +178,12 @@ header {
   margin-bottom: 10px;
 }
 
+.features-list > li {
+  width: 270px;
+}
+
 .features-text {
-  line-height: 1.17;
+  line-height: 1.71;
 }
 
 .title-of-part {
@@ -226,8 +230,6 @@ header {
 .emloyee-content {
   padding-top: var(--indent-card);
   padding-bottom: var(--indent-card);
-  padding-left: 62px;
-  padding-right: 62px;
 }
 
 .employee-position {
@@ -238,17 +240,18 @@ header {
 
 /*footer----------------------------------------------------------*/
 
-.footer {
+footer {
   background-color: var(--dark-background-color);
-}
-
-.footer-conteiner {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.contact-link {
+.contact-item:not(:last-child) {
   margin-bottom: 9px;
+
+}
+
+.contact-link {
   font-style: normal;
   line-height: 1.71;
   color: var(--footer-contact-color);
@@ -267,7 +270,7 @@ header {
 .portfolio-btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn {
